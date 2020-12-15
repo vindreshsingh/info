@@ -1,0 +1,523 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Infloso</title>
+	<!-- /* <link rel="manifest" href="https://www.infloso.com/manifest.json"> */ -->
+	<meta name="robots" content="noindex,nofollow">
+    <link rel="stylesheet" type="text/css" href="./infoso.css">
+	<link rel="stylesheet" type="text/css" href="./navbar.css">
+	<link rel="stylesheet" type="text/css" href="./infoso-mob.css">
+	<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	
+	
+</head>
+<body id="webAppBody" class="" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+<header ng-controller="HeaderController" ng-init="$root.init('https://www.infloso.com/plugins/app/init')" id="header" class="header ng-scope">
+	<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+		<div class="container">
+			<a class="navbar-brand" href="https://www.infloso.com/">Infloso</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContents" aria-controls="navbarContents" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarContents">
+				<ul class="navbar-nav navbar-nav-right ml-auto mr-5">
+					<li class="nav-item ">
+						<a class="nav-link  " href="https://www.infloso.com/">Home </a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link " href="https://www.infloso.com/influencer">Influencers</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link " href="https://www.infloso.com/brand">Brands</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link " href="https://www.infloso.com/blogs">Blogs</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link " href="https://www.infloso.com/explore">Explore</a>
+					</li>
+					<li class="nav-item  mr-3">
+						<a class="nav-link " href="https://www.infloso.com/contact#contacts">Contact</a>
+					</li>
+				</ul>
+				<!-- ngIf: !$root.sidenav && $root.app.status=='LOGGED_IN' -->
+				<!-- ngIf: $root.app.status=='GET_AUTH' --><a class="btn btn-primary btn-rounded my-2 my-sm-0 w-sm-100 ng-scope" ng-click="$root.initCustomModal('authModal',null,'login');" ng-if="$root.app.status=='GET_AUTH'" href="javascript:void(0)"><i class="czi-locked mr-2"></i>Log in</a><!-- end ngIf: $root.app.status=='GET_AUTH' -->
+				
+			</div>
+		</div>
+	</nav>
+</header>
+  <section class="hero aos-init aos-animate" id="hero" data-aos="fade-up" data-aos-duration="2000">
+	<img src="https://www.infloso.com/assets/images/general/bg-hero.png" data-src="https://www.infloso.com/assets/images/general/bg-hero.png" class="background-image ls-is-cached lazyloaded">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 left">			
+				<h1>India's 1<sup>st</sup></h1>
+				<h2 class="mb-5">Open market place<br>for Influencers &amp; Brands</h2>
+				<a class="btn btn-primary btn-lg mr-3 btn-rounded" href="javascript:void(0)" onclick="goTo('aboutInfluencerContainer');" role="button">I'm an Influencer</a>
+				<a class="btn btn-outline-primary btn-lg btn-rounded" href="javascript:void(0)" onclick="goTo('aboutBrand');" role="button">I'm a Brand</a>
+			</div>
+			<div class="col-md-6 right">
+			</div>
+		</div>
+	</div>
+</section> 
+<section class="about bg-primary" id="aboutInfluencer">
+	<div class="container">
+		<div class="row" id="aboutInfluencerContainer">
+			<div class="col-md-6 slider-holder">
+				<div class="iphone-slider" id="iphoneSlider">
+					<div id="sliderHeader" class="iphone-slider-header">
+						<center>Infloso</center>
+					</div>
+					
+					<div id="iphoneSliderBody" class="iphone-slider-body">
+						<div class="iphone-slide" data-slide="1">
+							<img src="https://www.infloso.com/assets/images/general/iphone/1.png" data-src="https://www.infloso.com/assets/images/general/iphone/1.png" class=" lazyloaded">
+							<div class="slide-caption"><i class="fa fa-fw fa-rupee"></i>1,000</div>
+						</div>
+						<div class="iphone-slide iphone-slider-left" data-slide="2">
+							<img src="https://www.infloso.com/assets/images/general/iphone/2.png" data-src="https://www.infloso.com/assets/images/general/iphone/2.png" class=" ls-is-cached lazyloaded">
+							<div class="slide-caption"><i class="fa fa-fw fa-rupee"></i>2,000</div>
+						</div>
+						<div class="iphone-slide iphone-slider-center" data-slide="3">
+							<img src="https://www.infloso.com/assets/images/general/iphone/3.png" data-src="https://www.infloso.com/assets/images/general/iphone/3.png" class=" lazyloaded">
+							<div class="slide-caption"><i class="fa fa-fw fa-rupee"></i>3,000</div>
+						</div>
+						<div class="iphone-slide iphone-slider-right" data-slide="4">
+							<img src="https://www.infloso.com/assets/images/general/iphone/4.png" data-src="https://www.infloso.com/assets/images/general/iphone/4.png" class=" lazyloaded">
+							<div class="slide-caption"><i class="fa fa-fw fa-rupee"></i>4,000</div>
+						</div>
+						<div class="iphone-slide" data-slide="5">
+							<img src="https://www.infloso.com/assets/images/general/iphone/5.png" data-src="https://www.infloso.com/assets/images/general/iphone/5.png" class=" ls-is-cached lazyloaded">
+							<div class="slide-caption"><i class="fa fa-fw fa-rupee"></i>5,000</div>
+						</div>
+						<div class="iphone-slide" data-slide="6">
+							<img src="https://www.infloso.com/assets/images/general/iphone/6.png" data-src="https://www.infloso.com/assets/images/general/iphone/6.png" class=" lazyloaded">
+							<div class="slide-caption"><i class="fa fa-fw fa-rupee"></i>6,000</div>
+						</div>
+						<div class="iphone-slide" data-slide="7">
+							<img src="https://www.infloso.com/assets/images/general/iphone/7.png" data-src="https://www.infloso.com/assets/images/general/iphone/7.png" class=" lazyloaded">
+							<div class="slide-caption"><i class="fa fa-fw fa-rupee"></i>7,000</div>
+						</div>
+						<div class="iphone-slide" data-slide="8">
+							<img src="https://www.infloso.com/assets/images/general/iphone/8.png" data-src="https://www.infloso.com/assets/images/general/iphone/8.png" class=" lazyloaded">
+							<div class="slide-caption"><i class="fa fa-fw fa-rupee"></i>8,000</div>
+						</div>
+						<div class="iphone-slide" data-slide="9">
+							<img src="https://www.infloso.com/assets/images/general/iphone/9.png" data-src="https://www.infloso.com/assets/images/general/iphone/9.png" class=" lazyloaded">
+							<div class="slide-caption"><i class="fa fa-fw fa-rupee"></i>9,000</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 contents aos-init" data-aos="fade-right" data-aos-duration="2000">
+								
+				<h1 class="text-center">If you are on social media<br>you are an influencer</h1>
+				<hr class="">
+				<div class="features pt-4 pb-4 text-white w-100">
+					<p><table class="" style="text-align: justify;"><tbody><tr><td style="width:50%"><div><span style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);"><br></span></div><ul><li><span style="color: rgb(255, 255, 255);">30X higher ROI</span></li><li><span style="color: rgb(255, 255, 255);">Powerful&nbsp;word-of-mouth marketing</span></li></ul></td><td style="width:50%"><ul><li><span style="color: rgb(255, 255, 255);">Start with as low as Rs. 1000</span></li><li><span style="color: rgb(255, 255, 255);">Reach your target audience</span></li></ul></td></tr></tbody></table></p>				</div>
+								
+				<div class="col-md-12 mt-5 text-center">
+					<!-- ngIf: $root.app.status=='GET_AUTH' --><a ng-if="$root.app.status=='GET_AUTH'" class="btn btn-outline-primary btn-zoom btn-rounded toggle-custom-modal pl-5 pr-5 ng-scope" href="javascript:void(0);" ng-click="$root.initCustomModal('authModal');$root.switchAuthCard('influencer','Influencer Signup')">Sign up</a><!-- end ngIf: $root.app.status=='GET_AUTH' -->
+					<!-- ngIf: $root.app.status=='LOGGED_IN' -->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="about" id="aboutInfluencerHIW">
+	<div class="container">
+		
+		<div class="row mt-2">
+			<div class="col-md-12 text-center">
+				<h1>How it works</h1>
+				<p class="text-primary">for influencers</p>
+			</div>
+		</div>
+		
+		<div class="row mt-2">
+			<div class="col-md-6 video text-left">
+				<iframe width="100%" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+				
+			</div>
+			<div class="col-md-6">
+				<div class="row mt-5 steps influencer">
+					<div class="col step step-one">
+						<img class="bg-shape lazyloaded" src="https://www.infloso.com/assets/images/general/hit-shape-1.png" data-src="https://www.infloso.com/assets/images/general/hit-shape-1.png">
+						<div class="box box-one aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+							<div class="number">1</div>
+							<img class=" lazyloaded" src="https://www.infloso.com/assets/images/general/get-paid-1.png" data-src="https://www.infloso.com/assets/images/general/get-paid-1.png">
+							<img class="t-arrow lazyloaded" src="https://www.infloso.com/assets/images/general/t-arrow-1.png" data-src="https://www.infloso.com/assets/images/general/t-arrow-1.png">
+							<h2>Choose<br><span>Campaign</span></h2>
+						</div>
+					</div>
+					<div class="col step step-two">
+						<img class="bg-shape lazyloaded" src="https://www.infloso.com/assets/images/general/hit-shape-2.png" data-src="https://www.infloso.com/assets/images/general/hit-shape-2.png">
+						<div class="box box-two aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+							<div class="number">2</div>
+							<img class=" lazyloaded" src="https://www.infloso.com/assets/images/general/get-paid-2.png" data-src="https://www.infloso.com/assets/images/general/get-paid-2.png">
+							<img class="t-arrow lazyloaded" src="https://www.infloso.com/assets/images/general/t-arrow-2.png" data-src="https://www.infloso.com/assets/images/general/t-arrow-2.png">
+							<h2>Create<br><span>Content</span></h2>
+						</div>
+					</div>
+					<div class="col step step-three">
+						<img class="bg-shape lazyloaded" src="https://www.infloso.com/assets/images/general/hit-shape-3.png" data-src="https://www.infloso.com/assets/images/general/hit-shape-3.png">
+						<div class="box box-three aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
+							<div class="number">3</div>
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/coins.png" data-src="https://www.infloso.com/assets/images/general/coins.png">
+							<h2>Get<br><span>paid in your bank</span></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="about bg-primary" id="aboutBrand">
+	<div class="container">
+		<div class="row pt-5 aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
+			<div class="col-md-6 contents mt-5 aos-init aos-animate" data-aos="fade-left" data-aos-duration="2000">
+								<h1 class="text-center">If you have product/service<br>you are a Brand</h1>
+				<hr class="">
+				<div class="features pt-4 pb-4 text-white w-100">
+					<table class=""><tbody><tr><td style="width:50%"><ul><li>Influencers with high engagement &amp; genuine reach guranteed</li><li>Reach your target audience</li><li>Start with as low as 2000</li></ul></td><td style="width:50%"><ul><li>Complete security and support by Infloso</li><li>Powerful word-of-mouth marketing</li><li>30X higher ROI</li></ul></td></tr></tbody></table>				</div>
+								<div class="text-center mt-5">
+					<!-- ngIf: $root.app.status=='GET_AUTH' --><a ng-if="$root.app.status=='GET_AUTH'" class="btn btn-outline-primary btn-zoom btn-rounded toggle-custom-modal pl-5 pr-5 ng-scope" href="javascript:void(0);" ng-click="$root.initCustomModal('authModal');$root.switchAuthCard('brand','Brand Signup')">Sign up</a><!-- end ngIf: $root.app.status=='GET_AUTH' -->
+					
+					<!-- ngIf: $root.app.status=='LOGGED_IN' -->
+				</div>
+			</div>
+			<div class="col-md-6 text-right">
+				<div class="row collage">
+					<div class="col col-one">
+						<div class="box aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/coll-1.png" data-src="https://www.infloso.com/assets/images/general/coll-1.png">
+						</div>
+						<div class="box aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+							<img class=" lazyloaded" src="https://www.infloso.com/assets/images/general/coll-2.png" data-src="https://www.infloso.com/assets/images/general/coll-2.png">
+						</div>
+						<div class="box aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/coll-3.png" data-src="https://www.infloso.com/assets/images/general/coll-3.png">
+						</div>
+						<div class="box aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/coll-4.png" data-src="https://www.infloso.com/assets/images/general/coll-4.png">
+						</div>
+					</div>
+					<div class="col col-two">
+						<div class="box aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/coll-5.png" data-src="https://www.infloso.com/assets/images/general/coll-5.png">
+						</div>
+						<div class="box aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+							<img class=" lazyloaded" src="https://www.infloso.com/assets/images/general/coll-6.png" data-src="https://www.infloso.com/assets/images/general/coll-6.png">
+						</div>
+						<div class="box aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/coll-7.png" data-src="https://www.infloso.com/assets/images/general/coll-7.png">
+						</div>
+						<div class="box aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/coll-8.png" data-src="https://www.infloso.com/assets/images/general/coll-8.png">
+						</div>
+						<div class="box aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/coll-17.png" data-src="https://www.infloso.com/assets/images/general/coll-17.png">
+						</div>
+					</div>
+					<div class="col col-three">
+						<div class="box aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+							<img class=" lazyloaded" src="https://www.infloso.com/assets/images/general/coll-9.png" data-src="https://www.infloso.com/assets/images/general/coll-9.png">
+						</div>
+						<div class="box aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/coll-10.png" data-src="https://www.infloso.com/assets/images/general/coll-10.png">
+						</div>
+						<div class="box aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/coll-11.png" data-src="https://www.infloso.com/assets/images/general/coll-11.png">
+						</div>
+						<div class="box aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/coll-12.png" data-src="https://www.infloso.com/assets/images/general/coll-12.png">
+						</div>
+					</div>
+					<div class="col col-four">
+						<div class="box aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/coll-13.png" data-src="https://www.infloso.com/assets/images/general/coll-13.png">
+						</div>
+						<div class="box aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
+							<img class=" lazyloaded" src="https://www.infloso.com/assets/images/general/coll-14.png" data-src="https://www.infloso.com/assets/images/general/coll-14.png">
+						</div>
+						<div class="box aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
+							<img class=" lazyloaded" src="https://www.infloso.com/assets/images/general/coll-15.png" data-src="https://www.infloso.com/assets/images/general/coll-15.png">
+						</div>
+						<div class="box aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/coll-16.png" data-src="https://www.infloso.com/assets/images/general/coll-16.png">
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<section class="about" id="aboutBrand">
+	<div class="container">		
+		<div class="row mt-2">
+			<div class="col-md-12 text-center">
+				<h1>How it works</h1>
+				<p class="text-primary">for brands</p>
+			</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col-md-6">
+				<div class="row mt-5 steps">
+					<div class="col step step-one">
+						<img class="bg-shape" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://www.infloso.com/assets/images/general/hit-shape-1.png">
+						<div class="box box-one aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000">
+							<div class="number">1</div>
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/create-campaign.png" data-src="https://www.infloso.com/assets/images/general/create-campaign.png">
+							<img class="t-arrow ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/t-arrow-1.png" data-src="https://www.infloso.com/assets/images/general/t-arrow-1.png">
+							<h2>Create<br><span>Campaign</span></h2>
+						</div>
+					</div>
+					<div class="col step step-two">
+						<img class="bg-shape ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/hit-shape-2.png" data-src="https://www.infloso.com/assets/images/general/hit-shape-2.png">
+						<div class="box box-two aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+							<div class="number">2</div>
+							<img class=" ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/select-influencer.png" data-src="https://www.infloso.com/assets/images/general/select-influencer.png">
+							<img class="t-arrow ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/t-arrow-2.png" data-src="https://www.infloso.com/assets/images/general/t-arrow-2.png">
+							<h2>Select<br><span>Influencer</span></h2>
+						</div>
+					</div>
+					<div class="col step step-three">
+						<img class="bg-shape ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/hit-shape-3.png" data-src="https://www.infloso.com/assets/images/general/hit-shape-3.png">
+						<div class="box box-three aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000">
+							<div class="number">3</div>
+							<img class=" lazyloaded" src="https://www.infloso.com/assets/images/general/success.png" data-src="https://www.infloso.com/assets/images/general/success.png">
+							<h2>Get<br><span>Promoted</span></h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 video text-right">
+				<iframe width="100%" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<section class="counters bg-primary" id="counters">
+	<img class="counter-bg-image ls-is-cached lazyloaded" src="https://www.infloso.com/assets/images/general/counter-bg.png" data-src="https://www.infloso.com/assets/images/general/counter-bg.png">
+	<div class="container">	
+		<div class="row" id="counter">
+			<div class="col-md-6 col-sm-6 holder holder-left">
+				<div class="counter" data-count="15000">15000</div>
+				<h3>Brands</h3>
+			</div>
+			<div class="col-md-6 col-sm-6 holder holder-right">
+				<div class="counter" data-count="25000">25000</div>
+				<h3>Influencers</h3>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- <section class="testimonial" id="testimonial">
+	<img src="https://www.infloso.com/assets/images/general/map.png" class="testimonial-bg-image">
+	<div class="container">	
+		<h1>Testimonials</h1>
+		<div class="items home-testimonial-items slick-initialized slick-slider slick-dotted aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" Previous</button>
+			<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 3500px; transform: translate3d(-1250px, 0px, 0px);"><div class="card slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1" style="width: 230px;">
+				<div class="media media-2x1 gd-primary"> <img class="profile-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-3.jpg"> </div>
+				<div class="card-body">
+					<h5 class="card-title">Tikoh Amin</h5>
+					<p class="card-text">"When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical."</p>
+				</div>
+			</div><div class="card slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1" style="width: 230px;">
+				<div class="media media-2x1 gd-primary"> <img class="profile-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-2.jpg"> </div>
+				<div class="card-body">
+					<h5 class="card-title">Malachi Lensing</h5>
+					<p class="card-text">"I’ve wanted a MacBook for a while now because of the build quality and the simplicity of the OS. I spend an average 6 hours a day."</p>
+				</div>
+			</div><div class="card slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1" style="width: 230px;">
+				<div class="media media-2x1 gd-primary"> <img class="profile-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869126/BBBootstrap/img-1.jpg"> </div>
+				<div class="card-body">
+					<h5 class="card-title">Christian Isla</h5>
+					<p class="card-text">"This MacBook has excellent processing speed. The screen is crystal clear and I really enjoy the touchbar. I set it up"</p>
+				</div>
+			</div><div class="card slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 230px;">
+				<div class="media media-2x1 gd-primary"> <img class="profile-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1563294707/Profile/img-1.jpg"> </div>
+				<div class="card-body">
+					<h5 class="card-title">Lori Charles</h5>
+					<p class="card-text">"For the last 10 years, I have owned an old Gateway laptop. Although it was amazing and lasted me, it was time for an upgrade."</p>
+				</div>
+			</div><div class="card slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00" style="width: 230px;">
+				<div class="media media-2x1 gd-primary"> <img class="profile-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1568709978/BBBootstrap/2.jpg"> </div>
+				<div class="card-body">
+					<h5 class="card-title">Delbert Simonas</h5>
+					<p class="card-text">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
+				</div>
+			</div><div class="card slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide01" style="width: 230px;">
+				<div class="media media-2x1 gd-primary"> <img class="profile-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-3.jpg"> </div>
+				<div class="card-body">
+					<h5 class="card-title">Tikoh Amin</h5>
+					<p class="card-text">"When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical."</p>
+				</div>
+			</div><div class="card slick-slide slick-active" data-slick-index="2" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide02" style="width: 230px;">
+				<div class="media media-2x1 gd-primary"> <img class="profile-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-2.jpg"> </div>
+				<div class="card-body">
+					<h5 class="card-title">Malachi Lensing</h5>
+					<p class="card-text">"I’ve wanted a MacBook for a while now because of the build quality and the simplicity of the OS. I spend an average 6 hours a day."</p>
+				</div>
+			</div><div class="card slick-slide slick-active" data-slick-index="3" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide03" style="width: 230px;">
+				<div class="media media-2x1 gd-primary"> <img class="profile-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869126/BBBootstrap/img-1.jpg"> </div>
+				<div class="card-body">
+					<h5 class="card-title">Christian Isla</h5>
+					<p class="card-text">"This MacBook has excellent processing speed. The screen is crystal clear and I really enjoy the touchbar. I set it up"</p>
+				</div>
+			</div><div class="card slick-slide slick-current slick-active" data-slick-index="4" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide04" aria-describedby="slick-slide-control01" style="width: 230px;">
+				<div class="media media-2x1 gd-primary"> <img class="profile-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1563294707/Profile/img-1.jpg"> </div>
+				<div class="card-body">
+					<h5 class="card-title">Lori Charles</h5>
+					<p class="card-text">"For the last 10 years, I have owned an old Gateway laptop. Although it was amazing and lasted me, it was time for an upgrade."</p>
+				</div>
+			</div><div class="card slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1" style="width: 230px;">
+				<div class="media media-2x1 gd-primary"> <img class="profile-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1568709978/BBBootstrap/2.jpg"> </div>
+				<div class="card-body">
+					<h5 class="card-title">Delbert Simonas</h5>
+					<p class="card-text">"Online reviews can make or break a customer's decision to make a purchase. Read about these customer review on site"</p>
+				</div>
+			</div><div class="card slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1" style="width: 230px;">
+				<div class="media media-2x1 gd-primary"> <img class="profile-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-3.jpg"> </div>
+				<div class="card-body">
+					<h5 class="card-title">Tikoh Amin</h5>
+					<p class="card-text">"When you think of Apple you automatically think expensive if your anything like me. When purchasing this laptop I was skeptical."</p>
+				</div>
+			</div><div class="card slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" tabindex="-1" style="width: 230px;">
+				<div class="media media-2x1 gd-primary"> <img class="profile-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869127/BBBootstrap/img-2.jpg"> </div>
+				<div class="card-body">
+					<h5 class="card-title">Malachi Lensing</h5>
+					<p class="card-text">"I’ve wanted a MacBook for a while now because of the build quality and the simplicity of the OS. I spend an average 6 hours a day."</p>
+				</div>
+			</div><div class="card slick-slide slick-cloned" data-slick-index="8" aria-hidden="true" tabindex="-1" style="width: 230px;">
+				<div class="media media-2x1 gd-primary"> <img class="profile-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1561869126/BBBootstrap/img-1.jpg"> </div>
+				<div class="card-body">
+					<h5 class="card-title">Christian Isla</h5>
+					<p class="card-text">"This MacBook has excellent processing speed. The screen is crystal clear and I really enjoy the touchbar. I set it up"</p>
+				</div>
+			</div><div class="card slick-slide slick-cloned" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 230px;">
+				<div class="media media-2x1 gd-primary"> <img class="profile-image" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1563294707/Profile/img-1.jpg"> </div>
+				<div class="card-body">
+					<h5 class="card-title">Lori Charles</h5>
+					<p class="card-text">"For the last 10 years, I have owned an old Gateway laptop. Although it was amazing and lasted me, it was time for an upgrade."</p>
+				</div>
+			</div></div></div>
+			
+			
+			
+			
+		<button class="slick-next slick-arrow" aria-label="Next" type="button" >Next</button><ul class="slick-dots"  role="tablist"><li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 2" tabindex="-1">1</button></li><li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide04" aria-label="2 of 2" tabindex="-1">2</button></li></ul></div>
+	</div>
+</section> -->
+
+<section class="cta-signup " id="ctaSignup">
+	<div class="container-fluid">
+		<div class="row top">
+			<div class="col-md-12 wrapper">
+				<h1>What are you waiting for?</h1>
+				<!-- ngIf: $root.app.status=='GET_AUTH' && $root.currentPage!='influencer' --><a ng-if="$root.app.status=='GET_AUTH' &amp;&amp; $root.currentPage!='influencer'" class="btn btn-primary btn-lg pulse-primary toggle-custom-modal ng-scope" ng-click="$root.initCustomModal('authModal',null,'signup');" href="javascript:void(0)">Sign up, it's free</a><!-- end ngIf: $root.app.status=='GET_AUTH' && $root.currentPage!='influencer' -->
+				<!-- ngIf: $root.app.status=='GET_AUTH' && $root.currentPage=='influencer' -->
+				
+				<!-- ngIf: $root.app.status=='LOGGED_IN' -->
+				
+			</div>
+		</div>
+		<!-- ngIf: $root.currentPage=='brand' || $root.currentPage=='' --><div ng-if="$root.currentPage=='brand' || $root.currentPage==''" class="row bottom ng-scope">
+			<div class="col-md-12 wrapper">
+				<h1>Do you want a custom solution for your brand?</h1>
+				
+				<a class="btn btn-warning btn-lg toggle-custom-modal custom-btn-pulse" href="https://www.infloso.com/brand-custom-solution">Get a quote</a>
+			</div>
+		</div><!-- end ngIf: $root.currentPage=='brand' || $root.currentPage=='' -->
+	</div>
+</section>
+<footer id="footer" class="bg-primary">
+	<!-- ngIf: $root.path[1]!='dashboard' --><div class="container top mb-3 ng-scope" ng-if="$root.path[1]!='dashboard'">
+		<div class="row mb-5">
+			<div class="col">
+				<h3>Quick Links</h3>
+				<ul>
+					<li><a href="https://www.infloso.com/">Home</a></li>
+					<li><a href="https://www.infloso.com/about">About</a></li>
+					<li><a href="https://www.infloso.com/career">Career</a></li>
+					<li><a href="https://www.infloso.com/explore">Explore</a></li>
+					<li><a href="https://www.infloso.com/blogs">Blogs</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h3>Brand &amp; Agencies</h3>
+				<ul>
+					<li><a href="https://www.infloso.com/brand">Who &amp; How</a></li>
+					<li><a href="https://www.infloso.com/brand-custom-solution">Custom Solutions</a></li>
+					<li><a href="community-standards#community-standards-brands-agencies">Community Standards</a></li>
+					<li><a href="https://www.infloso.com/campaign-review-approval">Campaign Review &amp; Approval</a></li>
+					<li><a href="https://www.infloso.com/campaign-standards-guidelines">Campaign Standards &amp; Guidelines</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h3>Influencers</h3>
+				<ul>
+					<li><a href="https://www.infloso.com/influencer">Who &amp; How</a></li>
+					<li><a href="/community-standards#community-standards-influencers">Community Standards</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h3>Resources</h3>
+				<ul>
+					<li><a href="https://www.infloso.com/privacy-policy">Privacy Policy</a></li>
+					<li><a href="https://www.infloso.com/terms-conditions">Terms &amp; Conditions</a></li>
+					<li><a href="https://www.infloso.com/cookies-policy">Cookies</a></li>
+					<li><a href="https://www.infloso.com/media-kit">Media &amp; Press Kit</a></li>
+					<li><a href="https://www.infloso.com/sitemap">Site Map</a></li>
+				</ul>
+			</div>
+			<div class="col">
+				<h3>Support</h3>
+				<ul>
+					<li><a href="https://www.infloso.com/help">Help &amp; FAQs</a></li>
+					<li><a href="https://www.infloso.com/trust-safety">Trust &amp; Safety</a></li>
+					<li><a href="https://www.infloso.com/contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<form id="subscriberForm" ng-submit="" autocomplete="off" class="ng-pristine ng-valid ng-valid-email"><input type="hidden" ng-model="subscriberForm.url" ng-init="subscriberForm.url='https://www.infloso.com/plugins/app/add-subscriber'" autocomplete="off" class="ng-pristine ng-untouched ng-valid ng-not-empty"><input type="hidden" ng-model="subscriberForm.subscriberFormToken" ng-init="subscriberForm.subscriberFormToken='74b16qk6lwg0c8swks8sco4wwgg40cw'" autocomplete="off" class="ng-pristine ng-untouched ng-valid ng-not-empty"><input type="hidden" ng-model="subscriberForm.csrfName" ng-init="subscriberForm.csrfName='subscriberFormToken'" autocomplete="off" class="ng-pristine ng-untouched ng-valid ng-not-empty">				
+					<div class="subscriber-form">
+						<div class="form-group">
+							<i class="czi-mail icon"></i>
+							<input class="form-control ng-pristine ng-untouched ng-valid ng-empty ng-valid-email" id="subscriberEmail" ng-model="$root.subscriberForm.subscriberEmail" placeholder="Enter email address to subscribe newsletters" type="email">
+							<button class="btn" type="button" ng-click="$root.addSubscriber()">Subscribe <i class="spinner-border spinner-border-sm ng-hide" ng-show="$root.subscriberForm.process"></i></button>
+						</div>
+						<p class="text-light align-center w-100 ng-binding ng-hide" ng-show="$root.contactForm.errorSubscriberEmail"></p>
+						<p class="text-light align-center w-100 ng-hide" ng-show="$root.subscriberForm.done"><i class="czi-check"></i> You have been subscribed successfully!</p>
+						<p class="text-light align-center w-100 ng-hide" ng-show="$root.subscriberForm.confirmSubscription"><i class="czi-check"></i> We have sent you a confirmation link to verify your email id.</p>
+					</div>
+				</form>			</div>
+			<div class="col-md-6">
+				<div class="social-links">
+					<a href="https://www.facebook.com" class="btn"><img src="https://www.infloso.com/assets/images/icons/social/facebook.png"></a>
+					<a href="https://www.instagram.com" class="btn"><img src="https://www.infloso.com/assets/images/icons/social/instagram.png"></a>
+					<a href="https://www.twitter.com" class="btn"><img src="https://www.infloso.com/assets/images/icons/social/twitter.png"></a>
+					<a href="https://www.linkedin.com" class="btn"><img src="https://www.infloso.com/assets/images/icons/social/linkedin.png"></a>
+					<a href="https://www.youtube.com" class="btn"><img src="https://www.infloso.com/assets/images/icons/social/youtube.png"></a>
+				</div>
+			</div>
+		</div>
+	</div><!-- end ngIf: $root.path[1]!='dashboard' -->
+	<div class="container bottom ">
+		<div class="d-flex justify-content-center">
+			Infloso © 2020 All rights reserved
+		</div>
+	</div>
+	<a class="btn go-top d-block" href="javascript:void(0)" id="btnGoTop" onclick="goTop('webAppBody');" role="button"><i class="fa fa-fw fa-chevron-up"></i></a>
+</footer>
+	</body>
+</html>

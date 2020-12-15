@@ -1,0 +1,212 @@
+@media only screen and (max-width: 600px) {
+	body{
+		font-family: 'M PLUS 1p';
+		font-size:13px;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	.btn:hover{
+		transform: scale(1); 
+	}
+	.header .navbar-light .navbar-toggler {
+		width: 35px;
+		height: 35px;
+		padding: 2px;
+	}
+	
+	.header .navbar-collapse {
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		-ms-flex-align: center;
+		align-items: center;
+		background: #ffffff;
+		width: 50%;
+		position: absolute;
+		right: 15px;
+		top: 60px;
+		padding: 10px;
+		border-radius: 10px;
+		-webkit-box-shadow:0px 10px 10px 0px rgba(0,0,0,0.2);
+		-moz-box-shadow:0px 10px 10px 0px rgba(0,0,0,0.2);
+		-ms-box-shadow:0px 10px 10px 0px rgba(0,0,0,0.2);
+		box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+		transition: 0.5s all ease-in-out;
+	}
+	.header .navbar-collapse a.btn{
+		width:100%;
+	}
+	
+	.hero {   
+		height: 450px;
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: initial;
+		width: 100%;
+		background: #ebf3fe;
+	}
+	.hero .left{
+		padding-top: 80px;
+		text-align: center;
+	}
+	.hero .left h1 {
+		font-size: 50px;
+	}
+	.hero .left p {
+		font-size: 25px;
+		line-height: 35px;
+	}
+	.hero .left .btn {
+		width:100%;
+		margin-bottom:20px;
+    }
+	.about{
+		padding-bottom:10px;
+	}
+	.about .contents{
+		padding-top: 10px;
+	}
+	.about .steps .step{
+		position: absolute;
+		display: block;
+		float: left;
+		width: 30%;
+		height: 370px;
+	}
+	.about .steps .step .info img {
+		width: 85px;
+	}
+	.about .steps .first .number {
+		position: absolute;
+		top: 5%;
+	}
+	.about .steps .second .number {
+		position: absolute;
+		top: 30%;
+	}
+	.about .steps .third .number {
+		position: absolute;
+		top: 55%;
+	}
+	.about .steps .step .number {
+		font-size: 55px;
+	}
+	.about .steps .step .info h2 {
+		font-size: 15px;
+		font-weight:600;
+	}
+	.about .steps .second {
+		position: absolute;
+		left: 34.3%;
+	}
+	.about .steps .third {
+		position: absolute;
+		left: 64.4%;
+	}
+	.about#aboutBrand .steps .third {
+		position: relative;
+		left: 0;
+	}
+	.about#aboutBrand .steps .second {
+		position: absolute;
+		left: 32%;
+	}
+	.about#aboutBrand .steps .first {
+		position: absolute;
+		left: 62%;
+	}
+	/*============== .counters begins ============*/
+	.counters .container{
+		padding-top: 60px;
+		padding-bottom: 50px;
+		min-height: 300px;
+	}
+	.counters .container .row{
+		height:300px;
+	}
+	/* .counters .container .holder{} */
+	.counters .container .holder .counter{
+		font-size: 25px;
+		color: #1e7cf3;
+		width: 300px;
+		background-color: transparent;
+		padding: 10px;
+		border-radius: 10px;
+		text-align: center;
+		border: 2px solid;
+		-webkit-border-radius: 50px;
+		-webkit-border-radius: 50px;
+		border-radius: 50px;
+		border-radius: 50px;
+	}
+	.counters .container .holder h3{
+		bottom: 30px;
+		font-size: 25px;
+	}
+	/*============== .counters begins ============*/
+
+
+	/*============== .cta-signup begins ============*/
+	/* .cta-signup{
+	}
+	.cta-signup .wrapper{
+	} */
+	.cta-signup .wrapper h2{
+		font-size: 25px;
+	}
+	.cta-signup .wrapper a{
+		margin-top: 30px;
+		width: 100%;
+		padding: 10px;
+		font-size: 25px;
+		-webkit-border-radius: 50px;
+		-moz-border-radius: 50px;
+		-ms-border-radius: 50px;
+		border-radius: 50px;
+	}
+
+	/*============== .cta-signup ends ============*/
+	
+	/*============== footer begins ============*/
+
+	footer .btn-custom{		
+		font-size: 16px;
+		text-align: center;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	/*============== footer ends ============*/
+	/*=============== .auth begins =================*/
+	.auth .container-fluid .contents {
+		position: absolute;
+	}
+	.auth .container-fluid .contents .back-button {
+		font-size: 18px;
+		margin-left: 95px;
+		color: #1e7cf3;
+		position: absolute;
+		top: 10px;
+		z-index: 1;
+		left: -90px;
+		color: #ffffff;
+	}
+	.auth .container-fluid .contents .card {
+		margin: 10px 10px 10px 0px;
+		position: absolute;
+		top: 50px;
+	}
+	.auth .container-fluid .contents .card .card-header,
+	.auth .container-fluid .contents .card .card-body,
+	.auth .container-fluid .contents .card .card-footer	{
+		padding: 10px 16px 10px 15px;
+	}
+	.auth .container-fluid .contents .card .card-header h1,
+	.auth .container-fluid .contents .card .card-header h2 {
+		text-align: center;
+	}
+	.auth .container-fluid .contents .card .card-body .social-auth .btn{
+		font-size: 14px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	/*=============== .auth ends =================*/
+}
